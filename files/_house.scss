@@ -1,0 +1,93 @@
+.house-container{
+  display: grid;
+  width: 50%;
+  max-width: var(--house-max-width);
+  min-width: var(--house-min-width);
+  aspect-ratio: 1/1;
+  grid-template-columns: repeat(92, minmax(0, 1fr));
+  grid-template-rows: repeat(92, minmax(0, 1fr));
+
+  .house-background{
+    background-color: var(--house-background);
+  }
+
+  .roof{
+    grid-column-start: 1;
+    grid-column-end: 92;
+    grid-row-start: 1;
+    grid-row-end: 34;
+    overflow: hidden;
+    display: flex;
+
+    div{
+      width: 50%;
+      height: 100%;
+
+      &:last-child{
+        background-image: linear-gradient(to right top, var(--house-background) 0%, var(--house-background) 50%, transparent 50%);
+      }
+
+      &:first-child{
+        background-image: linear-gradient(to left top, var(--house-background) 0%, var(--house-background) 50%, transparent 50%);
+      }
+    }
+  }
+
+  .chimney{
+    grid-column-start: 14;
+    grid-column-end: 25;
+    grid-row-start: 4;
+    grid-row-end: 34;
+  }
+
+  .house{
+    grid-column-start: 6;
+    grid-column-end: 86;
+    grid-row-start: 34;
+    grid-row-end: 84;
+  }
+
+  .door{
+    grid-column-start: 38;
+    grid-column-end: 54;
+    grid-row-start: 60;
+    grid-row-end: 84;
+    background-color: var(--house-door-background);
+    display: flex;
+    align-items: center;
+
+    .door-lock{
+      background-color: var(--background);
+      width: 16%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      margin-left: 25%;
+    }
+  }
+
+  .window{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+
+    &.left{
+      grid-column-start: 16;
+      grid-column-end: 36;
+      grid-row-start: 38;
+      grid-row-end: 58;
+    }
+
+    &.right{
+      grid-column-start: 56;
+      grid-column-end: 76;
+      grid-row-start: 38;
+      grid-row-end: 58;
+    }
+
+    .window-box{
+      aspect-ratio: 1/1;
+      width: 40%;
+      background-color: var(--background);
+    }
+  }
+}
