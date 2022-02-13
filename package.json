@@ -1,0 +1,21 @@
+{
+  "name": "css-house",
+  "version": "1.0.0",
+  "description": "House with HTML-CSS",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pnsadeghy/CSS-Home.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Pouria Sadeghi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pnsadeghy/CSS-Home/issues"
+  },
+  "homepage": "https://github.com/Pnsadeghy/CSS-Home#readme"
+}
